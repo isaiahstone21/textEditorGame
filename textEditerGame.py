@@ -216,13 +216,10 @@ def go_left(coins, backpack):
     return coins, backpack
 def downstairs(coins, backpack):
     while win == False:
-        print("You have gone down the stairs, you can either 'Go left' towards your parents bedroom or 'Go right' to enter the kitchen")
+        print("You have gone down the stairs, you can either 'Go left' towards your parents bedroom.")
         downstairs_action = input()
         if downstairs_action == 'Go left':
             coins, backpack = go_left(coins, backpack)
-            break
-        if downstairs_action == 'Go right':
-            kitchen()
             break
         else:
             print("Invalid Input")
